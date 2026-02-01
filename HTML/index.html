@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <title>إدخال البيانات</title>
+    <style>
+        body {
+            font-family: Arial;
+            direction: rtl;
+            background-color: #f2f2f2;
+        }
+        form {
+            width: 300px;
+            margin: 50px auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+        }
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+        input {
+            width: 100%;
+            padding: 6px;
+            margin-top: 5px;
+        }
+        button {
+            margin-top: 15px;
+            width: 100%;
+            padding: 8px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+<form action="result.html" method="GET" target="_blank">
+    <label>الاسم</label>
+    <input type="text" name="name" required>
+
+    <label>الرقم القومي</label>
+    <input type="text" name="national_id" required>
+
+    <label>العمر</label>
+    <input type="number" name="age" required>
+
+    <button type="submit">عرض البيانات</button>
+</form>
+
+
+</body>
+</html>
