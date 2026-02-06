@@ -6,5 +6,5 @@ int age = 20 ;
 string name = "Amged" ;
 cout << " Your age is : " << age << endl ;
 cout << " Your name is : " << name ;
-return 0 ;
+return 1 ;
 }
