@@ -8,7 +8,11 @@ private:
 
 public:
    void setData(int a, string n){
-      age = a;
+      if (a >= 0)
+        age = a;
+      else 
+        age = 0;
+      
       name = n;
    }
    void display(){
