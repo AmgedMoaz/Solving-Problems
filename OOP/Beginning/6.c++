@@ -3,28 +3,31 @@ using namespace std;
 
 class Animal {
 public :
- void sound()
+  virtual void sound()
  {
   cout<<"Animal makes a sound"<<endl;
  }
 };
 class Dog : public Animal {
 public :
-void sound() {
+void sound() override{
      cout<<"Dog barks"<<endl;
  }
 };
 class Cat : public Animal {
 public :
-void sound() {
+void sound() override{
      cout<<"Cat meows"<<endl;
  }
 } ;
 int main ()
 {
-   Dog ob1;
-   Cat ob2;
-   ob1.sound();
-   ob2.sound();
+   Animal* animal1 = new Dog();
+   Animal* animal2 = new Cat();
+   animal1->sound();
+   animal2->sound();
+
+   delete animal1;
+   delete animal2;
     return 0;
 }
