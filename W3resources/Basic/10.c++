@@ -1,3 +1,4 @@
+// Code a program to format the output of floating point numbers.
 #include <iostream>
 #include <iomanip> 
 

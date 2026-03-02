@@ -1,3 +1,4 @@
+// Code a program to create a new string made of 4 copies of the first 2 characters of a given string. If the given string is less than 2 characters long, return the original string.
 #include <iostream>
 #include <string>
 using namespace std;

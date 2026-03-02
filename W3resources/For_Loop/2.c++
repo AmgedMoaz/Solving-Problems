@@ -1,3 +1,4 @@
+// Code a program to find the sum of first 10 natural numbers.
 #include<iostream>
 using namespace std;
 int main () {

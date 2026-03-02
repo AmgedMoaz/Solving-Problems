@@ -1,3 +1,4 @@
+// Code a program to check if a given string begins with "if". If so, return the string, otherwise return the string with "if " added to the front.
 #include <iostream>
 using namespace std;
 string Find (string word) {

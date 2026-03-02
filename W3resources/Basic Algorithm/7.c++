@@ -1,3 +1,4 @@
+// Code a program to swap the first and last characters of a given string and return the new string.
 #include <iostream>
 #include <string>
 using namespace std;

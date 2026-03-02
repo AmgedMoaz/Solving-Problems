@@ -1,3 +1,4 @@
+// Code a programm to find the sum of first n natural numbers.
 #include <iostream>
 using namespace std;
 int main (){

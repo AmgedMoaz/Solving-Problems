@@ -1,3 +1,4 @@
+// Code a program to compute the absolute difference between n and 51. If n is greater than 51 return triple the absolute difference.
 #include <iostream>
 using namespace std;
 int Calc(int x)

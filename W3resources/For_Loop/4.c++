@@ -1,3 +1,4 @@
+// Code a program to find and display all perfect numbers between 1 and 500.
 #include <iostream>
 using namespace std;
 

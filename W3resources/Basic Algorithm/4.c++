@@ -1,3 +1,4 @@
+// Code a program to check if a given integer is within 10 of 100 or 200.
 #include <iostream>
 using namespace std;
 bool Test(int x)

@@ -1,3 +1,4 @@
+// Code a program to create a new string made of the last character of a given string, followed by the string, followed by the last character of the string again.
 #include <iostream>
 #include <string>
 using namespace std;

@@ -1,3 +1,4 @@
+// Code a program to check two given integers and return true if one of them is 30 or if their sum is 30.
 #include <iostream>
 using namespace std;
 bool Test(int x , int y)
