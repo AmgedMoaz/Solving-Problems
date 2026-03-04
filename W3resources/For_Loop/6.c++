@@ -1,3 +1,4 @@
+// Code a program to check prime numbers within range using for loop. 
 #include <iostream>
 #include <math.h> 
 using namespace std; 
