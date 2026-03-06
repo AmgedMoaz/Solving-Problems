@@ -1,4 +1,4 @@
-// Code a program to Reverse a Given String
+// Code a program to reverse a Given String
 #include <iostream>
 #include <string>
 using namespace std;
