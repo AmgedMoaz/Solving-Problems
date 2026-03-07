@@ -1,3 +1,4 @@
+// Code a program to check if the number of occurrences of two given characters in a string are the same or not.
 #include <iostream>
 #include <string>
 #include <unordered_map>

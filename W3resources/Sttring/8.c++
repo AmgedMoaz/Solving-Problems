@@ -1,3 +1,4 @@
+// Code a program to count the number of words in a string.
 #include <iostream>
 #include <string>
 using namespace std;
