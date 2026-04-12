@@ -13,16 +13,11 @@ int main () {
         return 0;
     }
     else {
-        int diff = b-a;
-         for (int i = 1 ; i <= diff ; i++)
-          {  
+        while (a <= b) {
             a *= 3;
             b *= 2;
-            if (a > b ) {
-                Year = i;
-                break;
-            }
-          }
+            Year++;
+        }
     }
     cout << Year << "\n";
     return 0;
