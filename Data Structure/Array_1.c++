@@ -50,10 +50,10 @@ int main () {
     Array ob(arraySize);
 
     ob.Fill();
-    ob.Display();
 
-    ob.getSize();
-    ob.getLength();
+    cout << "The size of the array is: " << ob.getSize() << "\t" << "The length of the array is: " << ob.getLength() << endl;
+   
+    ob.Display();
 
     return 0;
 }
