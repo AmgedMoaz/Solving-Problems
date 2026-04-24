@@ -43,8 +43,8 @@ class Array {
     int getLength() {
         return Length;
     }
-    int Search() {
-        int key , index = -1;
+    int Search(int key) {
+        int index = -1;
         cout << "Enter the element you want to search: ";
         cin >> key;
         for(int i = 0 ; i < Length ; i++) {
@@ -78,16 +78,18 @@ class Array {
             cin >> newItem;
             cout << "Enter the index where you want to insert the element: ";
             cin >> index;
-            for(int i = Length ; i > index ; i--) {
-                items[i] = items[i-1];
-            }
-            items[index] = newItem;
-            Length++;
-        }
-        else {
+               if(index < Length && index >= 0) {
+                  for(int i = Length ; i > index ; i--) {
+                      items[i] = items[i-1];
+                   }
+                    items[index] = newItem;
+                       Length++;
+                }else {
+                       cout << "Invalid index. Please enter an index between 0 and " << Size-1 << "." << endl;
+                    }
+        } else {
             cout << "Array is full. Cannot insert more elements." << endl;
         }
-
     }
 };
 int main () {
@@ -102,7 +104,7 @@ int main () {
    
     ob.Display();
 
-    // ob.Search();
+    // ob.Search(12);
 
     /*ob.Append();
     ob.Display();*/
