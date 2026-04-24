@@ -44,6 +44,7 @@ class Array {
         return Length;
     }
 };
+
 int main () {
     cout << "Enter the size of the array: ";
     int arraySize;

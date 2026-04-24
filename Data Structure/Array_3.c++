@@ -1,4 +1,4 @@
-   // Search() , Append() and Insert() functions for array implementation in C++
+   // Delete() , Enlarge() and Merge() functions for array implementation in C++
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -91,6 +91,52 @@ class Array {
             cout << "Array is full. Cannot insert more elements." << endl;
         }
     }
+    void Delete() {
+       int index;
+         cout << "Enter the index of the element you want to delete: ";
+            cin >> index;
+        if (index < Length && index >= 0) {
+            for (int i = index; i < Length - 1; i++) {
+                items[i] = items[i + 1];
+            }
+            Length--;
+        } else {
+            cout << "Invalid index. Please enter an index between 0 and " << Length - 1 << "." << endl;
+        }
+    }
+    void Enlarge() {
+        int newSize;
+        cout << "Enter the new size of the array: ";
+        cin >> newSize;
+        if (newSize > Size) {
+            int* Old = items;
+            items = new int[newSize];
+            for (int i = 0; i < Length; i++) {
+                items[i] = Old[i];
+              }
+               delete[] Old;
+               Size = newSize;
+                  cout << "Array size has been enlarged to " << Size << "." << endl;
+                } else {
+            cout << "New size must be greater than current size (" << Size << ")." << endl;
+        }
+    }
+    void Merge(Array other)
+    {
+        int totalSize = Size + other.getSize();
+        int*Old = items;
+        items = new int[totalSize];
+        for (int i = 0; i < Length; i++) {
+            items[i] = Old[i];
+        }
+        for (int j = 0; j < other.getLength(); j++) {
+            items[Length + j] = other.items[j];
+        }
+        Length += other.getLength();
+        Size = totalSize;
+        delete[] Old;
+         cout << "Arrays have been merged. New size is " << Size << " and new length is " << Length << "." << endl;
+    }
 };
 
 int main () {
@@ -112,6 +158,21 @@ int main () {
    
     /* ob.Insert();
     ob.Display();*/
+
+    /* ob.Delete();
+    ob.Display();*/
+
+    /* ob.Enlarge();
+        ob.Display();
+         cout << "The size of the array is: " << ob.getSize() << "\t" << "The length of the array is: " << ob.getLength() << endl; */
+
+    cout << "Enter the size of the Other Array: ";
+    int otherSize;
+    cin >> otherSize;
+    Array other(otherSize);
+    other.Fill();
+    ob.Merge(other);
+    ob.Display();
 
     return 0;
 }
