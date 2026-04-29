@@ -1,4 +1,4 @@
- // C++ program to demonstrate linked list
+ // C++ program to demonstrate linked list and its operations like insertFirst() , Display() , Count() and isFound()
 #include <bits/stdc++.h>
 using namespace std;
 
