@@ -1,4 +1,4 @@
-// Stack Implementation in C++ with methods for Push(), Pop(), isEmpty() and Display()
+// Stack Implementation in C++ with methods for Peek() , Count() , isFull() and Search()
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -42,6 +42,7 @@ class Stack  {
             }
         }
     }
+
     int Pop() {
         if(isEmpty()) {
             cout << "Stack is empty" << endl;
@@ -61,6 +62,7 @@ class Stack  {
         }
 
     }
+
     void Display() {
        if(isEmpty()) {
            cout << "Stack is empty" << endl;
@@ -74,7 +76,67 @@ class Stack  {
        }
     }
 
+    int Peek() {
+        if(isEmpty()) {
+            cout << "Stack is empty" << endl;
+            return -1;
+        }else {
+            return top->Data;
+        }
+    } 
+
+    int Count() {
+        if(isEmpty()) {
+            cout << "Stack is empty" << endl;
+            return 0;
+        }else {
+            int count =0;
+            Node* Temp = top;
+            while(Temp != NULL) {
+                count++;
+                Temp = Temp->Next;
+            }
+           return count;
+       }
+    }
+
+    bool Search() {
+        if(isEmpty()) {
+            cout << "Stack is empty" << endl;
+            return false;
+        }else {
+            cout << "Enter item to search : ";
+            int item;
+            cin >> item;
+            bool isFound = false;
+            Node* Temp = top;
+            while(Temp != NULL) {
+            if(Temp->Data == item) {
+                    isFound = true;
+                   }
+                  Temp = Temp->Next;
+               }
+               if(isFound == true) {
+                   cout << "Founded" << endl;
+                   return isFound;
+              }else {
+              cout << "Not Found" << endl;
+              return isFound;
+              }
+       }
+    }
+
+    bool isFull() {
+        Node* newNode = new Node();
+        if(newNode == NULL) {
+            return true;
+        }else {
+            delete newNode;
+            return false;
+        }
+    }
 };
+
 int main() {
    cout << "Hi !" << endl;
    Stack ob;
@@ -85,6 +147,10 @@ int main() {
 
    ob.Pop();
    ob.Display();
+
+  cout << "Value of top element: " << ob.Peek() << endl;
+  cout << "Number of elements in stack : " << ob.Count() << endl;
+  ob.Search();
       
 
     return 0;
