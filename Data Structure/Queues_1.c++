@@ -58,14 +58,11 @@ class Queue {
            cout << Temp->Data << " ";
            Temp = Temp->Next;
         }
+        cout << endl;
     }
   }
 
   void Degueue() {
-     cout << "How many items you want to Dequeue : ";
-        int n;
-        cin >> n;
-        for(int i = 0; i < n; i++) {
            if(isEmpty()) {
                 cout << "Queue is Empty" << endl;
               }else if(front == rear) {
@@ -74,9 +71,8 @@ class Queue {
                  } else{
                      Node* dlptr = front;
                     front = dlptr->Next;
-                       delete dlptr;
-                    }
-        }
+                       delete dlptr;          
+           }
   }
 
 };
@@ -86,8 +82,13 @@ int main () {
    ob.Enqueue();
    ob.Display();
 
+  cout << "How many items you want to Dequeue : ";
+    int n; 
+    cin >> n;
+    for(int i = 0; i < n; i++) {
     ob.Degueue();
+    }
     ob.Display();
-    
+
     return 0;
 }
