@@ -8,8 +8,8 @@ int main() {
   
   string keyboard = "qwertyuiopasdfghjkl;zxcvbnm,./";
   if(direction == 'L') {
-    for(int i : s) {
-      int index = keyboard.find(s[i]);
+    for(char c : s) {
+      int index = keyboard.find(c);
       cout << keyboard[index + 1];
     }
   } else {
