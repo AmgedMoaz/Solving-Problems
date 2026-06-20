@@ -2,7 +2,7 @@
 using namespace std;
 
 int main() {
-  int n, k; 
+  long long n, k; 
   cin >> n >> k;
 
   long long sum = (n+1)/2;;
