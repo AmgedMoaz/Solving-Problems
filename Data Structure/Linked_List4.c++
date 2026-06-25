@@ -32,7 +32,7 @@ class Node {
         newNode->Data = element;
         newNode->Next = NULL;
         newNode->Prev = NULL;
-        Head = newNode;
+        Head = Tail = newNode;
     }else {
           Node *newNode = new Node();
             newNode->Data = element;
@@ -41,6 +41,27 @@ class Node {
             Head->Prev = newNode;
             Head = newNode;
        }
+    }
+
+    void insertLast() {
+        cout << "Enter the data to insert at last: ";
+        int element;
+        cin >> element;
+
+        if(Head == NULL) {
+            Node *newNode = new Node();
+            newNode->Data = element;
+            newNode->Next = NULL;
+            newNode->Prev = NULL;
+            Head = Tail = newNode;
+        }else {
+              Node *newNode = new Node();
+                newNode->Data = element;
+                newNode->Next = NULL;
+                newNode->Prev = Tail;
+                Tail->Next = newNode;
+                Tail = newNode;
+           }
     }
 
 
