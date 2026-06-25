@@ -69,6 +69,7 @@ class Node {
     void insertAtPosition(int position) {
         if(position < 0 || position > size) {
             cout << "Invalid position!" << endl;
+            return;
         } else if(position == 0) {
             insertFirst();
         } else  if(position == size) {
@@ -82,7 +83,7 @@ class Node {
         newNode->Data = element;
 
         Node *temp = Head;
-        for(int i = 1; i < position - 1; i++) {
+        for(int i = 0; i < position ; i++) {
             temp = temp->Next;
         }
 
@@ -93,6 +94,21 @@ class Node {
 
         size++;
       }
+    }
+
+    void display() {
+        if(Head == NULL) {
+            cout << "List is empty!" << endl;
+            return;
+        }
+
+        Node *temp = Head;
+        cout << "Doubly Linked List: ";
+        while(temp != NULL) {
+            cout << temp->Data << " ";
+            temp = temp->Next;
+        }
+        cout << endl;
     }
 
 
