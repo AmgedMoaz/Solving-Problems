@@ -1,4 +1,4 @@
- // Delete() in Linked List
+ // Delete() and Reverse()in Linked List
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -133,7 +133,25 @@ class Linkedlist {
         }
 
        }
-        
+       
+       void Reverse() {
+        if(isEmpty()) {
+          cout << "List is already empty U can't reverse it" << endl;
+        }else {
+            Node*next , *prev , *current;
+            current = head;
+            prev = NULL;
+            next = NULL;
+            while(current != NULL) {
+                next = current->Next;
+                current->Next = prev;
+                prev = current;
+                current = next;
+            }
+            head = prev;
+        }
+       }
+
 };
 int main () {
     Linkedlist list;
@@ -151,7 +169,7 @@ int main () {
     list.Display();
     cout << endl;
 
-    cout << "\nNumber of items in the list is: " << list.Count() << endl;
+   /* cout << "\nNumber of items in the list is: " << list.Count() << endl;
     cout << "Enter the number U want to search: " << endl;
     int key;
     cin >> key;
@@ -179,7 +197,11 @@ int main () {
         list.Delete(item);
         cout << "List is: ";
         list.Display();
-        cout <<"\n";
+        cout <<"\n";*/
+        
+        list.Reverse();
+        cout << "List after reversing is: ";
+        list.Display();
 
     return 0;
 }
