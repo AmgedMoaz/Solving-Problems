@@ -3,26 +3,45 @@
 using namespace std;
 
 class Node {
-    // by default private  
+  public:
   int Data;
   Node* Next;
   Node* Prev;
 };
 
  class DoublyLinkedList {
+      // by default private
     Node *Head;
     Node *Tail;
+    int size;
 
   public:
   DoublyLinkedList() {
     Head = NULL;
     Tail = NULL;
+    size = 0;
   }
 
   void insertFirst() {
+    cout << "Enter the data to insert at first: ";
+    int element;
+    cin >> element;
 
-  }
-
+    if(Head == NULL) {
+        Node *newNode = new Node();
+        newNode->Data = element;
+        newNode->Next = NULL;
+        newNode->Prev = NULL;
+        Head = newNode;
+    }else {
+          Node *newNode = new Node();
+            newNode->Data = element;
+            newNode->Next = Head;
+            newNode->Prev = NULL;
+            Head->Prev = newNode;
+            Head = newNode;
+       }
+    }
 
 
 };
