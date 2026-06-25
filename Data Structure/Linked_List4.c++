@@ -41,6 +41,7 @@ class Node {
             Head->Prev = newNode;
             Head = newNode;
        }
+       size++;
     }
 
     void insertLast() {
@@ -62,6 +63,43 @@ class Node {
                 Tail->Next = newNode;
                 Tail = newNode;
            }
+         size++;
+    }
+
+    void insertAtPosition(int position) {
+        if(position < 1 || position > size + 1) {
+            cout << "Invalid position!" << endl;
+            return;
+        }
+
+        if(position == 1) {
+            insertFirst();
+            return;
+        }
+
+        if(position == size + 1) {
+            insertLast();
+            return;
+        }
+
+        cout << "Enter the data to insert at position " << position << ": ";
+        int element;
+        cin >> element;
+
+        Node *newNode = new Node();
+        newNode->Data = element;
+
+        Node *temp = Head;
+        for(int i = 1; i < position - 1; i++) {
+            temp = temp->Next;
+        }
+
+        newNode->Next = temp->Next;
+        newNode->Prev = temp;
+        temp->Next->Prev = newNode;
+        temp->Next = newNode;
+
+        size++;
     }
 
 
