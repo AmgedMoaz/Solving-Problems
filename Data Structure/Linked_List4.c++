@@ -7,15 +7,21 @@ class Node {
   int Data;
   Node* Next;
   Node* Prev;
+};
+
+ class DoublyLinkedList {
+    Node *Head;
+    Node *Tail;
 
   public:
-  Node() {
-    Data = 0;
-    Next = NULL;
-    Prev = NULL;
+  DoublyLinkedList() {
+    Head = NULL;
+    Tail = NULL;
   }
 
-  
+  void insertFirst() {
+
+  }
 
 
 
