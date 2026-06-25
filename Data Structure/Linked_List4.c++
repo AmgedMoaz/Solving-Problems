@@ -67,21 +67,13 @@ class Node {
     }
 
     void insertAtPosition(int position) {
-        if(position < 1 || position > size + 1) {
+        if(position < 0 || position > size) {
             cout << "Invalid position!" << endl;
-            return;
-        }
-
-        if(position == 1) {
+        } else if(position == 0) {
             insertFirst();
-            return;
-        }
-
-        if(position == size + 1) {
+        } else  if(position == size) {
             insertLast();
-            return;
-        }
-
+        }else {
         cout << "Enter the data to insert at position " << position << ": ";
         int element;
         cin >> element;
@@ -100,6 +92,7 @@ class Node {
         temp->Next = newNode;
 
         size++;
+      }
     }
 
 
