@@ -27,15 +27,14 @@ class Node {
     int element;
     cin >> element;
 
+    Node *newNode = new Node();
+    newNode->Data = element;
+
     if(Head == NULL) {
-        Node *newNode = new Node();
-        newNode->Data = element;
         newNode->Next = NULL;
         newNode->Prev = NULL;
         Head = Tail = newNode;
     }else {
-          Node *newNode = new Node();
-            newNode->Data = element;
             newNode->Next = Head;
             newNode->Prev = NULL;
             Head->Prev = newNode;
@@ -49,15 +48,14 @@ class Node {
         int element;
         cin >> element;
 
+        Node *newNode = new Node();
+        newNode->Data = element;
+
         if(Head == NULL) {
-            Node *newNode = new Node();
-            newNode->Data = element;
             newNode->Next = NULL;
             newNode->Prev = NULL;
             Head = Tail = newNode;
         }else {
-              Node *newNode = new Node();
-                newNode->Data = element;
                 newNode->Next = NULL;
                 newNode->Prev = Tail;
                 Tail->Next = newNode;
