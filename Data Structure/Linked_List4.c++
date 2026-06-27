@@ -7,6 +7,12 @@ class Node {
   int Data;
   Node* Next;
   Node* Prev;
+
+  Node() {
+    Data = 0;
+    Next = NULL;
+    Prev = NULL;
+  }
 };
 
  class DoublyLinkedList {
@@ -169,6 +175,13 @@ class Node {
         while(temp != NULL && temp->Data != element) {
             temp = temp->Next;
         }
+
+        if(temp == NULL)
+        {
+           cout << "Element not found!" << endl;
+           return;
+        }
+
         temp->Prev->Next = temp->Next;
         temp->Next->Prev = temp->Prev;
         delete temp;
@@ -191,6 +204,10 @@ class Node {
       }
     }
 
+    int getSize() {
+        return size;
+    }
+
 };
 
 int main() {
@@ -209,8 +226,8 @@ int main() {
     ob.deleteElement(7);
     ob.display();
 
-
-
+    ob.reverseDisplay();
+    cout << "Size of the list: " << ob.getSize() << endl;
 
     return 0;
 }
