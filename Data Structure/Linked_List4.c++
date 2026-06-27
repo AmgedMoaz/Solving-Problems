@@ -22,6 +22,15 @@ class Node {
     size = 0;
   }
 
+  ~DoublyLinkedList() {
+    Node *temp = Head;
+    while(Head != NULL) {
+        Head = Head->Next;
+        delete temp;
+        temp = Head;
+    }
+  }
+
     void insertFirst() {
     cout << "Enter the data to insert at first: ";
     int element;
@@ -167,7 +176,21 @@ class Node {
       }
     }   
 
-    
+    void reverseDisplay() {
+      if(size == 0) {
+        cout << "List is empty!" << endl;
+        return;
+      }else {
+        Node *temp = Tail;
+        cout << "Doubly Linked List in reverse order: ";
+        while(temp != NULL) {
+            cout << temp->Data << " ";
+            temp = temp->Prev;
+        }
+        cout << endl;
+      }
+    }
+
 };
 
 int main() {
