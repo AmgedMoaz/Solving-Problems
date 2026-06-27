@@ -109,6 +109,64 @@ class Node {
             cout << endl;
         }
 }
+
+    void deleteFirst() {
+        if(size == 0) {
+            cout << "List is empty!" << endl;
+            return;
+        }else if(size == 1) {
+            Node *temp = Head;
+            Head = Tail = NULL;
+            delete temp;
+            size--;
+        }else {
+            Node *temp = Head;
+
+            Head = Head->Next;
+            Head->Prev = NULL;
+            delete temp;
+            size--;
+        }
+    }
+
+    void deleteLast() {
+          if(size == 0) {
+            cout << "List is empty!" << endl;
+            return;
+        }else if(size == 1) {
+            Node *temp = Head;
+            Head = Tail = NULL;
+            delete temp;
+            size--;
+        }else {
+            Node *temp = Tail;
+            Tail = Tail->Prev;
+            Tail->Next = NULL;
+            delete temp;
+            size--;
+        }
+    }
+
+    void deleteElement(int element) {
+      if(size == 0) {
+        cout << "List is empty!" << endl;
+        return;
+      }else if(element == Head->Data) {
+        deleteFirst();  
+      }else if(element == Tail->Data) {
+        deleteLast();
+      }else {
+        Node *temp = Head;
+        while(temp != NULL && temp->Data != element) {
+            temp = temp->Next;
+        }
+        temp->Prev->Next = temp->Next;
+        temp->Next->Prev = temp->Prev;
+        delete temp;
+        size--;
+      }
+    }   
+
     
 };
 
@@ -120,6 +178,16 @@ int main() {
     ob.insertLast();
     ob.insertAtPosition(2);
     ob.display();
+
+
+   //  cout << "After deleting first and last node: " << endl;
+   /* ob.deleteFirst();
+    ob.deleteLast();*/
+    ob.deleteElement(7);
+    ob.display();
+
+
+
 
     return 0;
 }
