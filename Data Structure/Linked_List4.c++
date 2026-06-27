@@ -22,7 +22,7 @@ class Node {
     size = 0;
   }
 
-  void insertFirst() {
+    void insertFirst() {
     cout << "Enter the data to insert at first: ";
     int element;
     cin >> element;
@@ -81,7 +81,7 @@ class Node {
         newNode->Data = element;
 
         Node *temp = Head;
-        for(int i = 0; i < position ; i++) {
+        for(int i = 1; i < position ; i++) {
             temp = temp->Next;
         }
 
@@ -98,16 +98,28 @@ class Node {
         if(Head == NULL) {
             cout << "List is empty!" << endl;
             return;
+           }else {
+   
+             Node *temp = Head;
+             cout << "Doubly Linked List: ";
+              while(temp != NULL) {
+                cout << temp->Data << " ";
+                temp = temp->Next;
+             }
+            cout << endl;
         }
-
-        Node *temp = Head;
-        cout << "Doubly Linked List: ";
-        while(temp != NULL) {
-            cout << temp->Data << " ";
-            temp = temp->Next;
-        }
-        cout << endl;
-    }
-
-
+}
+    
 };
+
+int main() {
+    DoublyLinkedList ob;
+    ob.insertFirst();
+    ob.insertFirst();
+    ob.insertLast();
+    ob.insertLast();
+    ob.insertAtPosition(2);
+    ob.display();
+
+    return 0;
+}
