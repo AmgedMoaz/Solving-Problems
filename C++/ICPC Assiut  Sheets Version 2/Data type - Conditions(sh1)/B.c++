@@ -2,6 +2,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 int main() {
+  
     int x1;
     long long x2;
     char c;
