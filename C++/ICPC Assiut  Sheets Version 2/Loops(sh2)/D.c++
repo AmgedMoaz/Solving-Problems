@@ -3,10 +3,9 @@
 using namespace std;
 int main() {
 
-int password = 0;
+int password = 0 , n;
 while(password != 1999) {
 
-   int n;
    cin >> n;
 
        if(n == 1999) {
