@@ -42,6 +42,5 @@ cin >> a >> b >> c;
   cout << n1 << "\n" << n2 << "\n" << n3 << endl;
   cout << "\n" << a << "\n" << b << "\n" << c << endl;
 
-
     return 0;
 }
