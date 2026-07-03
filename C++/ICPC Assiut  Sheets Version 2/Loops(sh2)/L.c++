@@ -18,6 +18,5 @@ int main() {
      }
       cout << GCD;
 
-
     return 0;
 }
