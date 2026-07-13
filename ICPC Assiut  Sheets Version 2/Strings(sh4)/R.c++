@@ -10,28 +10,28 @@ using namespace std;
       cin >> s;
 
        int i = 0;
-        while(i < s.size()) {
+        while(i < n) {
         
          if(s[i] == 'V') {
             score += 5;
           }else if(s[i] == 'W') {
              score += 2;
            }else if(s[i] == 'X') {
-            if(i != s.size()-1)
-               s.erase(i+1,1);
+            if(i != n-1)
+               i++;
             }else if (s[i] == 'Y') {
-              if(i != s.size()-1) {
+              if(i != n-1) {
                s.push_back(s[i+1]);
-                s.erase(i+1,1);
+                i++;  n++;
               }
                }else if(s[i] == 'Z') {
-                  if(i != s.size()-1) {
+                  if(i != n-1) {
                       if(s[i+1] == 'V') {
                          score /= 5;
-                          s.erase(i+1,1);
+                          i++;
                        }else if(s[i+1] == 'W') {
                          score /= 2;
-                        s  .erase(i+1,1);
+                          i++;
                        }
                   }
                 } 
