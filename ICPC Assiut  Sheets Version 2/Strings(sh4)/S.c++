@@ -1,4 +1,4 @@
-  // String Score
+  // Max Split
 #include <bits/stdc++.h>
 using namespace std;
  int main() {
