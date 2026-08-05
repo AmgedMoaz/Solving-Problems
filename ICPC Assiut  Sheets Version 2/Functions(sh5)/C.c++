@@ -27,7 +27,6 @@ int main() {
     }
 
     return 0;
-
 }
 
 //Definition of the isPalindrome function

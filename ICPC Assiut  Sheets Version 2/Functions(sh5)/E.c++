@@ -4,6 +4,7 @@ using namespace std;
 
 // Function to swap two integers
 void swap_numbers(int x , int y);
+
 int main() {
 
  int a , b;

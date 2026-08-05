@@ -29,5 +29,6 @@ long long equation(int a , int b) {
          res = 1;
          index+=2;
      }
+     
    return sum;
 }

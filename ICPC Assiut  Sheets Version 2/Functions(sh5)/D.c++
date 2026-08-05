@@ -19,6 +19,8 @@ int main() {
                 cout << "NO" << endl;
             }
      }
+     
+     return 0;
 }
 
 // Definition of the isPrime function
