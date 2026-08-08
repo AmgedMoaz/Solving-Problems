@@ -2,6 +2,15 @@
 .idea/
 *.iml
 
+# Build output
+out/
+
+# VS Code
+.vscode/
+
+# Java
+*.class
+
 # C++
 *.exe
 
