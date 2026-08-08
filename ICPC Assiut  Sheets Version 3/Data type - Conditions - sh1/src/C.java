@@ -7,7 +7,7 @@ public class C {
     public static void main(String[] args) {
 
     long x , y;
-    x = input.nextInt();
+    x = input.nextLong();
     y = input.nextInt();
 
     System.out.println(x + " + " + y + " = " + (x+y));
