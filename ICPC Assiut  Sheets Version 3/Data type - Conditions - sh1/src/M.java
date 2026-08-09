@@ -8,6 +8,9 @@ public class M {
 
         char x;
         x = input.next().charAt(0);
+
+        // الطريقة الاولي
+        /*
         if(x >= '0' && x <= '9') {
             System.out.println("IS DIGIT");
         }else {
@@ -17,6 +20,18 @@ public class M {
           }else if(x >= 'A' && x <= 'Z') {
               System.out.println("IS CAPITAL");
           }
+        }
+         */
+
+        if(Character.isDigit(x)) {
+            System.out.println("IS DIGIT");
+        }else {
+            System.out.println("ALPHA");
+            if(Character.isLowerCase(x)) {
+                System.out.println("IS SMALL");
+            }else {
+                System.out.println("IS CAPITAL");
+            }
         }
 
     }
