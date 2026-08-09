@@ -4,7 +4,6 @@ import java.util.Scanner;
 
 public class O {
     static Scanner input = new Scanner(System.in);
-
     public static void main(String[] args) {
 
         String expression = input.nextLine();
@@ -33,5 +32,6 @@ public class O {
             System.out.println(A * B);
         else
             System.out.println(A / B);
+
     }
 }
