@@ -20,7 +20,7 @@ int main() {
     return 0;
 }
  
-// Definition the 
+// Definition the print function
 void print(int Array[] , int Size ,int index)
 {
     if(index > Size-1)
