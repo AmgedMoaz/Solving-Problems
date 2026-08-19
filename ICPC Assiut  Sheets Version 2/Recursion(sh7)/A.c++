@@ -19,9 +19,9 @@ int main() {
 // Definition the print function
 void print(int n) {
     if( n == 0)
-      return;
+      return;                           // base case
     else {
-        cout << "I love Recursion\n";
-        print(n-1);
+        cout << "I love Recursion\n";   
+        print(n-1);                     // recursive case
     } 
 }
