@@ -20,10 +20,10 @@ int main ()
 
 // Definition the print function
 void print(int row) {
-    if(row == 0) return;
+    if(row == 0) return;                                 // base case
 
     for(int i = 1 ; i <= n - row ; i++)   cout << " ";
     for(int i = 1 ; i <= 2*row - 1 ; i++) cout << "*";
     cout << "\n";
-    print(row-1);
+    print(row-1);                                         // recursive case
 }

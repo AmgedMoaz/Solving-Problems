@@ -22,7 +22,7 @@ int main ()
 // Definition the count function
 int count(string phrase) {
     if(index == phrase.size()) {
-        return counter;
+        return counter;                                    // base case
     }
 
     if(phrase[index] == 'A' || phrase[index] == 'a' ||
@@ -34,5 +34,5 @@ int count(string phrase) {
     }
 
     index++;
-    return count(phrase);
+    return count(phrase);                                    // recursive case
 }
