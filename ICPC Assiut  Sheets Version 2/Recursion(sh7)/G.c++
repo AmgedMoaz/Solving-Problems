@@ -10,6 +10,7 @@ void print(int n);
 
 int main ()
 {
+  
     cin >> N;
     print(N);
     
