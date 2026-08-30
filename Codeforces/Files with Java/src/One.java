@@ -2,7 +2,7 @@
 
 import java.util.Scanner;
 
-public class Main {
+public class One {
     public static void main(String[] argv) {
 
         Scanner input = new Scanner(System.in);
