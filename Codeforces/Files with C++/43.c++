@@ -1,3 +1,4 @@
+// 1D Eraser
 // Write a code to solve problem by using Greedy Algorithm Technique
 
 #include <bits/stdc++.h>
