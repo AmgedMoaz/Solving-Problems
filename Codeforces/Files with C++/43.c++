@@ -1,4 +1,4 @@
-// Write a code to solve problem by using Sliding Window Technique
+// Write a code to solve problem by using Greedy Algorithm Technique
 
 #include <bits/stdc++.h>
 using namespace std;
