@@ -1,5 +1,5 @@
 // Ski Resort
-// Write a code to solve problem by using 
+// Write a code to solve problem by using two pointers and sliding window techniques;
 
 #include <bits/stdc++.h>
 using namespace std;
