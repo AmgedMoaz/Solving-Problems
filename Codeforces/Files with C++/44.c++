@@ -1,5 +1,5 @@
 // Black and White Stripe
-// Write a code to solve problem by using Greedy Algorithm Technique
+// Write a code to solve problem by using Sliding Window Technique
 
 #include <bits/stdc++.h>
 using namespace std;
