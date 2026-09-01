@@ -1,3 +1,4 @@
+// Favorite Sequence
 // Write a code to solve problem by using two pointers technique
 
 import java.util.Scanner;

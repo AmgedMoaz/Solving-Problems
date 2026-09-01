@@ -1,3 +1,4 @@
+// 1D Eraser
 // Write a code to solve problem by using Greedy Algorithm technique
 
 import java.util.Scanner;
