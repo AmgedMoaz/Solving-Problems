@@ -15,6 +15,7 @@ public class A {
         }else {
             System.out.println("WA");
         }
+        input.close();
 
     }
 }

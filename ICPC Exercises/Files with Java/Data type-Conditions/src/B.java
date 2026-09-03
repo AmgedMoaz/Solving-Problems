@@ -15,6 +15,7 @@ public class B {
         }else {
             System.out.println("error");
         }
+        in.close();
 
     }
 }
