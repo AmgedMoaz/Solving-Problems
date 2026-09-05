@@ -26,7 +26,7 @@ public class A {
         }else {
             System.out.println(-1);
         }
-
         in.close();
+
     }
 }
