@@ -1,6 +1,5 @@
 // Good or Bad
 
-import java.sql.SQLOutput;
 import java.util.Scanner;
 
 public class H {
