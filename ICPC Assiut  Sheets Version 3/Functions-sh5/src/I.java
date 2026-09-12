@@ -1,7 +1,6 @@
 // Swapping With Matrix
 
 import java.util.Scanner;
-import java.lang.Math.*;
 
 public class I {
     public static void main(String [] args) {
