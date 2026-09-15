@@ -1,4 +1,4 @@
-// Supercentral Point
+// Petr and Book
 
 #include <bits/stdc++.h>
 using namespace std;

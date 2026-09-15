@@ -1,4 +1,4 @@
-// Supercentral Point
+// Casimir's String Solitaire
 
 #include <bits/stdc++.h>
 using namespace std;

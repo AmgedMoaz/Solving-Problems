@@ -1,4 +1,4 @@
-// Gravity Flip
+// Strange Partition
 
 #include <bits/stdc++.h>
 using namespace std;
