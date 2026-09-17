@@ -15,9 +15,9 @@ public class L {
     }
     static long sum(int arr[] , int index , long sum) {
         if(index == arr.length)
-            return sum;         // base case
+            return sum;                      // base case
 
         sum += arr[index];
-        return sum(arr,index+1 ,sum);
+        return sum(arr,index+1 ,sum);   // recursive case
     }
 }
