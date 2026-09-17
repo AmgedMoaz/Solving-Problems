@@ -20,6 +20,6 @@ public class I {
         if(c == 'a' || c == 'e' || c == 'i' || c == 'o' || c == 'u') {
                 counter++;
         }
-        return countVowels(s,counter,index+1);
+        return countVowels(s,counter,index+1);   // recursive case
     }
 }
