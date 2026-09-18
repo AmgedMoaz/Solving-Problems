@@ -28,14 +28,14 @@ public class N {
     }
     static void sumMatrix(int i , int j) {
         if(i == r)
-            return;                    // base case
+            return;                                                 // base case
 
         if(j == c) {
             System.out.println();
-            sumMatrix(i+1 , 0 );   // recursive case
+            sumMatrix(i+1 , 0 );                                // recursive case
         }else {
             System.out.print( (arr1[i][j] + arr2[i][j]) + " ");
-            sumMatrix(i,j+1);
+            sumMatrix(i,j+1);                                     // recursive case
         }
     }
 }
