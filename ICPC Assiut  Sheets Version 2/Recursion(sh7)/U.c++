@@ -29,6 +29,11 @@ int solve(int i, int remainingW)
 
 int main()
 {
+
+// لسرعة الإدخال والإخراج في لغة C++
+ios_base::sync_with_stdio(false);
+cin.tie(NULL);
+
     cin >> N >> W;
 
     for (int i = 0; i < N; i++)
