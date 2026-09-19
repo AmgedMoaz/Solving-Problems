@@ -2,7 +2,7 @@
 
 import java.util.Scanner;
 
-public class Y {
+public class X {
     static int n;
     static int m;
     static int[][] arr;
