@@ -1,5 +1,5 @@
 // Max Sum Subarray of size K
-// Write a code to solve the problem by using sliding window technique
+// Write a code to solve the problem by using sliding window with fixed size technique
 
 import java.util.Scanner;
 
