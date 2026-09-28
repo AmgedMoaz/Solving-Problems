@@ -6,6 +6,9 @@ using namespace std;
 long long solve(long long a , long long b);
 
 int main() {
+// لزيادة سرعة القراءة والكتابة
+ios_base::sync_with_stdio(false);
+cin.tie(NULL);
 
 short k;    cin >> k;
 string aStr , bStr;
