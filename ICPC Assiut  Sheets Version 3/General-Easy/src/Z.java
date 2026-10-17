@@ -32,7 +32,7 @@ public class Z {
         for(var c : dq) {
             result.append(c);
         }
-        System.out.println(result);
+        System.out.println(result.toString());
         in.close();
     }
 }
