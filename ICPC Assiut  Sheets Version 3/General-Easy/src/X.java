@@ -24,6 +24,7 @@ public class X {
         }
         in.close();
     }
+
     static boolean isPrime(int num) {
         for(int i = 2 ; i*i <= num ; i++) {
             if(num%i == 0) {
